@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.containerForm {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("img/fondo\ web.png");
+}
+.firstForm {
+  width: 50%;
+  height: 70%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.form {
+  width: 60%;
+  padding: 1% 1% 1% 1%;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.imgForm {
+  background: url("img/banner-celima-trebol-web-19.04.22-3.png-modif.png")
+    no-repeat center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+.containerAmbientes {
+  width: 100%;
+  max-height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("img/fondo\ web.png");
+}
+
+.secondForm {
+  padding: 0;
+  width: 45%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+  background-color: white;
+  color: #676766;
+}
+.contenedorImg {
+  margin: 2%;
+}
+.img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+button {
+  margin-top: 1%;
+  background-color: #d0eff4;
+  border: none;
+  padding: 1% 3% 1% 3%;
+  color: #5abaca;
+  cursor: pointer;
+}
+
+.boton-baño {
+  text-decoration: none;
+  color: #676766;
+  background-color: white;
+  border: none;
+}
+#popUpBox {
+  width: 50%;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 1%;
+  text-align: center;
+  display: none;
+}
+
+input {
+  padding: 3% 10% 3% 10%;
+  border: none;
+  margin-top: 5%;
+  border-radius: 2%;
+  font-size: 18px;
+}
+::placeholder {
+  color: #8f9da5;
+  font-size: 1em;
+}
+
+.buttonSend {
+  padding: 5% 10% 5% 10%;
+  background-color: #41bfd8;
+  color: white;
+}
+@media only screen and (max-width: 700px) {
+  .firstForm {
+    width: 100%;
+    height: 80%;
+  }
+  input {
+    border: none;
+    margin-top: 4%;
+    font-size: 14px;
+  }
+  .logos {
+    margin-top: 5%;
+    display: flex;
+
+    margin-bottom: 5%;
+  }
+  .secondForm {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+    width: 90%;
+    min-height: 100%;
+    min-height: 50%;
+  }
+  .containerAmbientes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstForm {
+    padding: 0;
+    width: 70%;
+    height: 70%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgForm {
+    width: 10px;
+    height: 10px;
+    visibility: hidden;
+  }
+  form {
+    margin-bottom: 5%;
+  }
+
+  .form {
+    width: 80%;
+  }
+  .imagen-logos {
+    max-height: 30%;
+  }
+}
+
+.baño-img {
+  width: 80%;
+  height: 80%;
+}
+.baño-section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.cerrar {
+  position: absolute;
+  top: 2%;
+  left: 85%;
+}
+@media only screen and (min-width: 1600px) {
+  .img {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  .secondForm {
+    width: 40%;
+  }
+}

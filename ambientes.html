@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="containerAmbientes">
+      <section class="secondForm">
+        <header style="text-align: center">
+          <br />
+          <h2>Selecciona tu ambiente</h2>
+        </header>
+
+        <section class="img">
+          <section class="contenedorImg" style="text-align: center">
+            <a href=" http://simulador.celima-trebol.com/sala-comedor/index.htm">
+              <img
+                src="img/imagenes/2022 SALA CONCRETO BEIGE 60X60.jpg"
+                alt=""
+                style="
+                  width: 150px;
+                  height: 150px;
+                  overflow: hidden;
+                  border-radius: 50%;
+                "
+            /></a>
+
+            <p>Sala</p>
+          </section>
+          <section class="contenedorImg" style="text-align: center">
+            <a href=" http://simulador.celima-trebol.com/dormitorio/index.htm">
+              <img
+                src="img/imagenes/2021 DORMITORIO BAGUA PLUS GRIS 60X60.jpg"
+                alt=""
+                style="
+                  width: 150px;
+                  height: 150px;
+                  overflow: hidden;
+                  border-radius: 50%;
+                "
+              />
+            </a>
+            <p>Dormitorio</p>
+          </section>
+          <section class="contenedorImg" style="text-align: center">
+            <a href="cocina.html">
+              <img
+                src="img/imagenes/cocina.jpeg"
+                alt=""
+                style="
+                  width: 150px;
+                  height: 150px;
+                  overflow: hidden;
+                  border-radius: 50%;
+                "
+              />
+            </a>
+            <p>Cocina</p>
+          </section>
+
+          <section class="contenedorImg" style="text-align: center">
+            <a href="bano.html">
+              <img
+                id="myImg"
+                src="img/imagenes/Baño_Torino-blanco-30x60.png"
+                alt=""
+                style="
+                  width: 150px;
+                  height: 150px;
+                  overflow: hidden;
+                  border-radius: 50%;
+                "
+              />
+            </a>
+
+            <p>Baño</p>
+          </section>
+          <section class="contenedorImg" style="text-align: center">
+            <a href="http://simulador.celima-trebol.com/fachada/index.htm">
+              <img
+                src="img/imagenes/2021 FACHADA FILETTI GRANITO PLUS BEIGE 30X60.jpg"
+                alt=""
+                style="
+                  width: 150px;
+                  height: 150px;
+                  overflow: hidden;
+                  border-radius: 50%;
+                "
+              />
+            </a>
+            <p>Exteriores</p>
+          </section>
+          <section class="contenedorImg" style="text-align: center">
+            <a href="http://simulador.celima-trebol.com/terraza/index.htm">
+              <img
+                src="img/imagenes/2021 TERRAZA YUNGAY PLUS BEIGE 30X60.jpg"
+                alt=""
+                style="
+                  width: 150px;
+                  height: 150px;
+                  overflow: hidden;
+                  border-radius: 50%;
+                "
+              />
+            </a>
+            <p>Terraza</p>
+          </section>
+        </section>
+
+        <hr />
+
+        <div id="popUpOverlay"></div>
+
+        <div id="popUpBox">
+          <div id="box">
+            <video
+              src="img\x.mp4"
+              width="640"
+              height="480"
+              controls
+            ></video>
+            <div id="closeModal"></div>
+          </div>
+        </div>
+        <section class="button">
+          <button
+            onclick="Alert.render('You look very pretty today.')"
+            class="btn"
+          >
+            <strong> Ver tutorial </strong>
+          </button>
+        </section>
+      </section>
+    </section>
+    <script src="./pop.js"></script>
+  </body>
+</html>
