@@ -54,7 +54,7 @@
               type="submit"
               class="buttonSend"
               id="button"
-              value="Suscribirse"
+              value="Send Email"
             />
           </form>
           <script
@@ -63,7 +63,7 @@
           ></script>
 
           <script type="text/javascript">
-            emailjs.init("2FkjgPACobKCJQOyX");
+            emailjs.init("zfOuKiJzLdDpc-wKq");
           </script>
         </section>
         <section class="imgForm"></section>
@@ -79,19 +79,19 @@
       .addEventListener("submit", function (event) {
         event.preventDefault();
 
-        btn.value = "Enviando...";
+        btn.value = "Sending...";
 
-        const serviceID = "default_service";
-        const templateID = "template_v5ds8al";
+        const serviceID = "service_2eel72k";
+        const templateID = "template_pvhtwdr";
 
         emailjs.sendForm(serviceID, templateID, this).then(
           () => {
-            btn.value = "Suscribirse";
+            btn.value = "Send Email";
             btn = window.open("/ambientes.html", "_self");
             alert("Sent!");
           },
           (err) => {
-            btn.value = "Suscribirse";
+            btn.value = "Send Email";
             alert(JSON.stringify(err));
           }
         );
